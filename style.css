@@ -7,7 +7,6 @@
   text-decoration: none;
   border: none;
   outline: none;
-  /* overflow-x: hidden; */
   scroll-behavior: smooth;
   font-family: "Poppins", "sans-serif";
   transition: 0.2s ease;
@@ -57,7 +56,6 @@ body {
   position: relative;
   color: var(--bg-color);
   font-weight: 500;
-  /* right:-10px; */
   font-size: 1.7rem;
   margin-right: 2rem;
 }
@@ -114,7 +112,6 @@ section {
 }
 .home .home-content {
   max-width: 44rem;
-  /* overflow-x: hidden; */
 }
 .home-content h1 {
   font-size: 5rem;
@@ -181,7 +178,6 @@ section {
   transform: translateY(-50%);
   width: 750px;
   height: 700px;
-  /* background: red; */
   overflow:hidden;
   pointer-events: none;
 }
@@ -189,7 +185,6 @@ section {
   position: absolute;
   top: 0;
   right: 0px;
-  /* background-color: purple; */
   width: 700px;
   height: 100%;
   border-radius: 0;
@@ -205,7 +200,6 @@ section {
   transform: rotate(calc(360deg / 4 * (var(--i))));
   color: var(--main-color);
   transform-origin: 350px;
-  /* z-index:1; */
   font-size: 2rem;
   animation-name: rotate;
   animation-duration: 15s;
@@ -263,7 +257,6 @@ section {
   justify-content: center;
   align-items: center;
   position: absolute;
-  /* background-color: aqua; */
   border-radius: 50%;
   z-index: 0;
   border: 0.2rem solid var(--main-color);
@@ -272,8 +265,6 @@ section {
   position: absolute;
   width: 0px;
   height: 0px;
-  /* transform:rotate(45deg); */
-  /* left:0; */
   color: var(--main-color);
   opacity: 1;
   border-right: 370px solid var(--main-color);
@@ -284,7 +275,6 @@ section {
   justify-content: center;
   align-items: center;
   z-index: 5;
-  /* border-radius: 50% 0% 0 0; */
 }
 .rect1{
   display:none;
@@ -293,12 +283,7 @@ section {
   width: 100%;
   margin-right: 0;
   padding-right: 0;
-  /* height: 100%; */
   z-index: 100;
-  /* right: 0px; */
-  /* left:75%; */
-  /* top:100%; */
-  /* bottom: 0%; */
   right: 0px;
   overflow: hidden;
 }
@@ -317,8 +302,8 @@ section {
   gap: 2rem;
 }
 .about-img img {
-  width: 20vw;
-  background: var(--main-color);
+  width: 25vw;
+  background: var(--bg-color);
 }
 .heading {
   text-align: center;
@@ -359,15 +344,7 @@ section {
 .skills {
   display: flex;
   flex-direction: column;
-  /* background-color: var(--bg-color); */
 }
-/* .skills-content{
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-rows:minmax(500px,800px);
-    grid-area:auto;
-} */
-
 .skills-content {
   display: flex;
   justify-content: center;
@@ -387,10 +364,7 @@ section {
   border-color: var(--main-color);
   background-color:var(--bg-color);
   border-style: solid;
-  /* border-top: .5rem solid var(--main-color);
-  border-bottom: .5rem solid var(--main-color); */
   box-shadow: 0rem 0.2rem 0.2rem var(--shadow-color);
-  /* transition: 0.5s ease; */
 }
 
 .skill-content h1 {
@@ -458,22 +432,9 @@ section {
 .project-box img {
   position: relative;
   width: 100%;
-  /* width: 40rem; */
   transition:0.5s ease-in-out;
 }
 .project-box .info{
-  /* display: flex;
-  width:100%; 
-  height: 100%;  
-  position:absolute;
-  left:0;
-  bottom:0;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  background: rgb(2,0,36);
-  background: linear-gradient(180deg, rgba(2,0,36,0.2) 0%, rgba(8,22,129,.2) 0%, rgba(0,212,255,1) 0%, rgba(7,55,152,.2) 0%, rgba(0,203,250,1) 100%, rgba(7,29,160,1) 100%, rgba(1,195,244,1) 100%, rgba(1,197,245,1) 100%, rgba(7,29,160,1) 100%, rgba(0,206,251,1) 100%, rgba(9,9,121,1) 100%);
-  transition:0.5s ease-in-out; */
   position: absolute;
     bottom: 0;
     left: 0;
@@ -501,7 +462,6 @@ section {
 }
 .project-box:hover .info{
   display: flex;
-  /* animation: slideUp 0.5s ease-in-out; */
   transform: translateY(0);
 }
 .project-box:hover img{
@@ -535,7 +495,6 @@ section {
   font-weight: 500;
   color: var(--text-color);
   background-color: var(--bg-color);
-  /* box-shadow: 0.1rem 0.1rem 0.1rem 0.2rem var(--main-color); */
   resize: none;
 }
 .contact-content form .input {
@@ -550,7 +509,6 @@ section {
   color: var(--text-color);
   background-color: var(--bg-color);
   border-radius: 10px;
-  /* box-shadow: 0.1rem 0.1rem 0.1rem 0.2rem var(--shadow-color); */
   padding: 1rem;
   font-weight: 500;
   font-size: 2rem;
@@ -638,13 +596,6 @@ footer a:hover{
   outline-color: var(--white-color);
 }
 
-/* Responsive design */
-/* @media (min-width:1px)
-{
-  .picture img{
-    width: 20vw;
-  }
-} */
 @media (max-width:1270px)
 {
   html{
