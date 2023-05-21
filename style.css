@@ -639,6 +639,9 @@ footer a:hover{
     top:25px;
     right:80px;
   }
+  .navEle{
+    background-color: var(--bg-color) !important;
+  }
   .navbar_hide .navEle a{
     margin:0px;
     padding-bottom: 5px;
