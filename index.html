@@ -27,7 +27,7 @@
     <title>Anish Dhatwalia</title>
     <!-- box icons -->  
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
-    <link rel="icon" type="image/png" href="pic1.png">
+    <link rel="icon" type="image/png" href="pic2.png">
 
     <!-- font awesome -->
 
@@ -101,7 +101,7 @@
 </section>
 <section class="about" id="about">
     <div class="about-img">
-        <img src="pic1.png" alt="">
+        <img src="pic2.png" alt="">
     </div>
     <div class="about-content">
         <h1 class="heading">ABOUT <span>ME</span></h1>
@@ -116,7 +116,7 @@
             <div class="skill-content">
                 <i class="bx bx-code-curly"></i>
                 <h1>Tech Stack</h1>
-                <h1><i class="bx bxl-c-plus-plus"></i> <i class="bx bxl-html5" ></i> <i class="bx bxl-css3"></i> <i class="bx bxl-javascript" ></i> <i class="bx bxl-react" ></i> <i class="bx bxl-php"></i></h1>
+                <h1><i class="bx bxl-c-plus-plus"></i> <i class="bx bxl-html5" ></i> <i class="bx bxl-css3"></i> <i class="bx bxl-javascript" ></i> <i class="bx bxl-react" ></i> <i class="bx bl-php"></i></h1>
             </div>
             <div class="skill-content">
                 <i class="bx bxs-data"></i>
@@ -191,14 +191,29 @@
     <section class="contact" id="contact">
         <h1 class="heading">Contact <span>Me</span></h1>
         <div class="contact-content">
-            <form action="" method="post">
-            <!-- <form> -->
+            <form action="https://formsubmit.co/6bf061e5163f032568f8bb252856f1d9" method="POST" id="ismForm"  name="ismForm" >
                 <div class="input">
-                    <input type="text" name="name" placeholder="Full Name">
-                    <input type="email" name="email" placeholder="Email">
+                    <!-- Honeypot -->
+                    <input type="text" name="_honey" style="display:none">
+
+                    <!-- next for redirecting to another page -->
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/css.html/Portfolio/index.html#contact">
+
+                    <input type="text" name="name" placeholder="Good Name" required id="name">
+                    <input type="email" name="email" placeholder="Email" required id="email">
+                    <!-- captcha -->
+                    
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <!-- autoresponse to send the user mail, but requires captcha -->
+                    <!-- <input type="hidden" name="_autoresponse" value="Thank You for contacting"> -->
                 </div>
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" ></textarea>
-                <input type="submit" name="submit" value="Send Message" class="button">
+                <input type="button" value="Send Message" class="button" id="button" required>
+                <div id="thank_you" style="display:none;">
+                    <div id="disName"></div>
+                    <p>Thank you for reaching out 😊</p>
+                  </div>                  
             </form>
         </div>
     </section>

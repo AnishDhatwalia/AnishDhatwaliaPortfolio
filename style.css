@@ -584,6 +584,24 @@ input::placeholder,textarea::placeholder{
   border-color: var(--main-color);
 }
 
+#thank_you{
+  height: 3rem;
+  margin-top: 2rem;
+  background-color: var(--bg-color);
+  margin-bottom:2rem;
+  text-align: center;
+}
+#disName{
+  display: inline;
+  font-size: 2rem;
+  color: var(--main-color);
+  font-style: underline;
+}
+#thank_you p{
+  display: inline;
+  font-size: 2rem;
+  color: var(--main-color);
+}
 /* footer -------------------------------------------------------------*/
 
 footer {

@@ -81,3 +81,33 @@ document.getElementById('navEle').addEventListener('click',function(e){
     let content=document.getElementById('navbar');
     content.classList.toggle('navbar_hide');
 });
+
+// for form thankyou message
+
+function isEmpty(element) {
+
+    if (element.value == "") {
+      alert("Please fill "+element.name);
+      return 1;
+    }
+    return 0;
+  }
+function submitForm() { // submits form
+    document.getElementById("ismForm").submit();
+    // submit() is not a function is the error occurs if we 'name' or keep type of any other input as submit (keep that in mind).
+}
+  document.getElementById('button').addEventListener('click', function (e) {
+        let name=document.getElementById('name');
+        let email=document.getElementById('email');
+        let message=document.getElementById('message');
+        if(isEmpty(name));
+        if(isEmpty(email));
+        if(isEmpty(message));
+        else {
+            setTimeout("submitForm()", 2000); // set timout 
+            let thank= document.getElementById("thank_you");
+            let disName= document.getElementById("disName");
+            thank.style.display='block';
+            disName.innerHTML=name.value;
+        }
+  });
