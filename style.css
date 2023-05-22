@@ -634,7 +634,7 @@ footer a:hover{
   }
   #darkMode-icon{
     display: inline;
-    color:var(--text-color);
+    color:var(--text-color) !important;
     position : absolute;
     top:25px;
     right:80px;
