@@ -645,12 +645,12 @@ footer a:hover{
   .navbar_hide .navEle a{
     margin:0px;
     padding-bottom: 5px;
-    color: var(--text-color);
+    color: var(--text-color) !important;
     display: block;
     text-align:center;
   }
   .navbar_hide .navEle .active{
-    color:var(--text-color);
+    color:var(--text-color)!important;
   }
   .navbar_hide .navEle .active::before {
     content: "";
